@@ -1,0 +1,7 @@
+
+EXEC="
+   test1
+"
+
+/bin/rm -f $EXEC
+
