@@ -9,12 +9,14 @@ CC=gcc
 P01=test1
 P02=test2
 P03=test3
+P04=test4
 
 
 EXECS= \
    $(P01) \
    $(P02) \
    $(P03) \
+   $(P04) \
 
 
 EXTRA= \
