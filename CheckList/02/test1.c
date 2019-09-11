@@ -1,7 +1,7 @@
 // Wed Sep 11 11:53:28 WIB 2019
 // Filename:   test1.c
 // To compile: gcc -o test1 test1.c
-// To run:     time ./test.c
+// To run:     time ./test1
 
 
 #include <stdio.h>

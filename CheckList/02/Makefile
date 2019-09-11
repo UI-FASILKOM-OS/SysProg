@@ -7,10 +7,12 @@
 CC=gcc
 
 P00=test1
+P01=test2
 
 
 EXECS= \
    $(P00) \
+   $(P01) \
 
 
 all:	seealso $(EXECS) 
