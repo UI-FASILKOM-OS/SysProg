@@ -1,4 +1,4 @@
-# REV01 Wed Sep 11 12:25:12 WIB 2019
+# REV01 Wed Sep 11 13:00:05 WIB 2019
 # START Wed Sep 11 12:20:16 WIB 2019
 #
 # To Compile: make
@@ -6,13 +6,15 @@
 
 CC=gcc
 
-P00=test1
-P01=test2
+P01=test1
+P02=test2
+P03=test3
 
 
 EXECS= \
-   $(P00) \
    $(P01) \
+   $(P02) \
+   $(P03) \
 
 
 EXTRA= \
