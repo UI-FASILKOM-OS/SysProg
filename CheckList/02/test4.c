@@ -4,16 +4,17 @@
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * REV01 Mon Sep 16 10:35:25 WIB 2019
  * START Wed Sep 11 13:04:29 WIB 2019
  */
 
 /*
  * Try:  
- *     ./test4
- *     ./test4 -a 
- *     ./test4 -b 
- *     ./test4 -a -b -c VALUE 
- *     ./test4 -d DODOL
+ *     time ./test4
+ *     time ./test4 -a 
+ *     time ./test4 -b 
+ *     time ./test4 -a -b -c VALUE 
+ *     time ./test4 -d DODOL
  */
 
 #include <ctype.h>
