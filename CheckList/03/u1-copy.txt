@@ -1,0 +1,13 @@
+START Mon Sep 16 11:56:43 WIB 2019
+
+copy
+
+Download:
+https://projects.ui.ac.id/attachments/download/7181/linux-programming-interface-exercises-master.zip
+
+See:
+  03-The-Stat-System-Call.pdf
+
+Try:
+  TLPI/fileio/copy.c
+
