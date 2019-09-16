@@ -3,9 +3,12 @@
 
 * [Download (ZIP)](https://github.com/UI-FASILKOM-OS/sysprog/archive/master.zip)
 
+* [Checklists](https://github.com/UI-FASILKOM-OS/SysProg/tree/master/CheckList)
+
+* [sysprog.vlsm.org](https://sysprog.vlsm.org/)
+
 * **KONTAK**:
   * **TBA**
-
 
 * **TBA**
 
