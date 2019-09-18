@@ -1,0 +1,25 @@
+# (c) 2016-2018 Rahmat M. Samik-Ibrahim
+# This is a simple free git config file
+# REV02 Tue Jul 10 21:09:49 DST 2018
+# START Thu Dec 22 19:10:42 WIB 2016
+
+[user]
+	email = rahmatm.samik-ibrahim@vlsm.org
+	name  = Rahmat M. Samik-Ibrahim
+
+[credential]
+	helper = cache --timeout=50000
+
+[merge]
+	conflictstyle = diff3
+
+[push]
+	default = upstream
+
+[http]
+	postBuffer = 994288000
+
+[https]
+	postBuffer = 994288000
+
+
