@@ -5,6 +5,8 @@
 
 * [Checklists](https://github.com/UI-FASILKOM-OS/SysProg/tree/master/CheckList)
 
+* [SCELE](https://scele.cs.ui.ac.id/course/view.php?id=725)
+
 * [sysprog.vlsm.org](https://sysprog.vlsm.org/)
 
 * **KONTAK**:
