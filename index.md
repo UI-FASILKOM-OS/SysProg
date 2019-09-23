@@ -7,6 +7,11 @@
 
 * [SCELE](https://scele.cs.ui.ac.id/course/view.php?id=725)
 
+* **TLPI**
+  * [TPLI-DIST](http://man7.org/tlpi/code/download/tlpi-190906-dist.tar.gz)
+
+  * [TPLI-BOOK](http://man7.org/tlpi/code/download/tlpi-190906-book.tar.gz)
+
 * [sysprog.vlsm.org](https://sysprog.vlsm.org/)
 
 * **KONTAK**:
