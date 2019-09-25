@@ -5,12 +5,16 @@
 
 * [Checklists](https://github.com/UI-FASILKOM-OS/SysProg/tree/master/CheckList)
 
+* **SP 2019-2 SandBox**: 
+  * [https://github.com/UI-FASILKOM-OS/sp192/tree/master/SandBox](https://github.com/UI-FASILKOM-OS/sp192/tree/master/SandBox)
+
 * [SCELE](https://scele.cs.ui.ac.id/course/view.php?id=725)
 
-* **TLPI**
-  * **TLPI-DIST** [http://man7.org/tlpi/code/download/tlpi-190906-dist.tar.gz](http://man7.org/tlpi/code/download/tlpi-190906-dist.tar.gz)
+* **[The Linux Programming Interface (TLPI)](http://man7.org/tlpi/code/online/)**
+  * **TLPI Download Page** [http://man7.org/tlpi/code/download/](http://man7.org/tlpi/code/download/)
+  * **TLPI Distribution Version (190906)** [http://man7.org/tlpi/code/download/tlpi-190906-dist.tar.gz](http://man7.org/tlpi/code/download/tlpi-190906-dist.tar.gz)
 
-  * **TLPI-BOOK** [http://man7.org/tlpi/code/download/tlpi-190906-book.tar.gz](http://man7.org/tlpi/code/download/tlpi-190906-book.tar.gz)
+  * **TLPI Book Version (190906)** [http://man7.org/tlpi/code/download/tlpi-190906-book.tar.gz](http://man7.org/tlpi/code/download/tlpi-190906-book.tar.gz)
 
 * [sysprog.vlsm.org](https://sysprog.vlsm.org/)
 
