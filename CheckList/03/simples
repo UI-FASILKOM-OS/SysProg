@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "What is $1?"
+
+echo "Args: $#"
+
+ZERO="0"
+
+# [ "$#" = "$ZERO" ] && echo zero
+# [ "$#" = "$ZERO" ] && echo zero
+
+[ -f $1 ] && echo "$1 is a file"
+[ -d $1 ] && echo "$1 is a directory"
+
+
+exit
+
