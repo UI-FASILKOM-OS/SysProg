@@ -1,0 +1,20 @@
+#!/bin/bash
+# flushgit:
+# REV00: Sat May 20 18:55:13 WIB 2017
+# START: Wed May 17 14:57:54 WIB 2017
+# Copyright (C) 2017 Rahmat M. Samik-Ibrahim http://RahmatM.Samik-Ibrahim.vLSM.org/
+
+# This program is free script/ software. This program is distributed in the hope 
+# that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
+# warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+PWD=`pwd`
+BASE=`basename $PWD`
+git pull origin master
+git add -A .
+git commit -m "`hostname` $BASE"
+git push origin master
+
+exit
+
+
