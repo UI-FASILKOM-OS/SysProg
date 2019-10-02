@@ -1,11 +1,11 @@
-# REV01 Wed Oct  2 11:48:29 WIB 2019
+# REV02 Wed Oct  2 12:00:26 WIB 2019
 # START Wed Oct  2 11:47:04 WIB 2019
 
 CheckList05b.txt
 
 1. (One group member) Create a new directory 
    (eg. SandBox/Group/shared05) that will be 
-   between shared between group members.
+   shared between group members.
    (push, do not forget a dummy file).
    
 2. (All group members): pull.
