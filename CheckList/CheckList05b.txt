@@ -1,0 +1,21 @@
+# START Wed Oct  2 11:47:04 WIB 2019
+
+CheckList05b.txt
+
+1. Create a new directory (eg. SandBox/Group/shared05) 
+   that will be between group members: push and pull.
+   (Do not forger a dummy file).
+
+2. (One group member) copy files from Demos/Week01/
+      a01-READ-ME
+      a02-sort-n-prepare
+      a03-command-lines-demo
+   (push and pull)
+
+3. Study and try those files.
+
+4. (Group) write your own "command-lines-demo" with a separated "command file".
+
+
+
+
