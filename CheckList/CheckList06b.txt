@@ -1,0 +1,119 @@
+# START Wed Oct  9 05:30:22 UTC 2019
+# START Wed Oct  9 12:30:22 WIB 2019
+
+CheckList06b.txt
+
+(All group members): 
+
+1. update your virtualguest
+
+2. (push and) pull sp192
+
+3. Create in your sp192/SandBox, folder "Week06b/"
+
+4. pull sp192
+
+5. create a Makefile (template).
+
+6. Skim-Read file 09-Shell-Script-II.pdf
+
+7. - create simple_read.c (page 6/49)
+   - update Makefile
+   - compile with make
+   - try
+   - clean
+   - push
+
+8. - create simple_writeX.c (page 7/49)
+   - update Makefile
+   - compile with make
+   - try
+   - clean
+   - push
+
+9. - create suatu-script.sh (page 32/49)
+   - try
+   - push
+
+10.- create exercise1.sh (page 35/49)
+   - try
+   - push
+
+11.- create exercise2.sh (page 38/49)
+   - try
+   - push
+
+12.- create exercise3.sh (page 40/49)
+   - Err. (page 41/49)
+     -- s/namaBerkas/fname/
+   - try
+   - push
+
+13.- create exercise4.sh (page 42/49)
+   - try
+   - push
+
+14.- create exercise5.sh (page 45/49)
+   - try
+   - push
+
+15. run command: "date"
+   - is your time in UTC or WIB?
+     -- Wed Oct  9 05:30:22 UTC 2019 or
+     -- Wed Oct  9 12:30:22 WIB 2019
+   - is UTC, set your time to WIB
+   - execute "date > WIBproof.txt"
+   - push
+
+16. fix your last time assignment:
+   - ie. fix your script based on Demos/Week01:
+     -- a01-READ-ME
+     -- a02-sort-n-prepare
+     -- a03-command-lines-demo
+   - create a new script "newscript.sh"
+   -- check if the screen is at least 80x23
+   -- automatically create a "$TESTDIR1" directory
+   -- automatically create files:
+   ---- "$TESTDIR1/file1.txt"
+   ---- "$TESTDIR1/file2.txt"
+   ---- "$TESTDIR1/file.awk"
+   ---- "$TESTDIR1/program2.c"
+
+   - create MANUALLY test-file.tex
+START test-file.txt ======================================
+   'ls'        
+   'ls -a'     
+   'ls -aF'    
+   'ls -al | head -8 ; echo "(...)"; ls -al | tail -8'             
+   'ls -a '"$TESTDIR1"' ; echo ":::::::::" ; ls -aF '"$TESTDIR1"   
+   'cat   '"$TESTDIR1"'/program2.c'                                
+   'cd    '"$TESTDIR1"' ; cat file1.txt ; echo "::::" ; cat file2.txt ; cd ..' 
+   'cd    '"$TESTDIR1"' ; diff file1.txt file2.txt ; cd ..' 
+   'cd    '"$TESTDIR1"' ; sort file1.txt ; cd ..' 
+   'pushd '"$TESTDIR1"' ; wc file1.txt ; wc -l file1.txt ; wc -c file1.txt;popd'
+   'date'     
+   'date +%y' 
+   'date +%Y' 
+   'date +%d\ %b\ %Y\ at\ %H:%M:%S;echo "::::";date "+%d %b %Y at %H:%M:%S"' 
+   'top -b -n 1 | head -15' 
+   'top -b -n 1 | head -9; echo "... etc ..."; top -b -n 1 | tail -7' 
+   'find . -type d -exec "echo" "{}" ";";echo ":::"; find . -type d -print' 
+   'MYVAR="This is MYVAR string"; echo $MYVAR; echo "$MYVAR"; echo \$MYVAR;echo '"'"'$MYVAR'"'"'' 
+   'printf "PATH=[%s]\nHOME=[%s]\nSHELL=[%s]\n" $PATH $HOME $SHELL' 
+   'printf "PID=[%s] --- NARG=[%s] --- ARG0=[%s]\n" $$ $# $0' 
+   'printf "ARG1=[%s]-- ARG2=[%s] -- ARG3=[%s] -- ARG4=[%s]\n" $1 $2 $3 $4'
+   'function dummy { printf "BASH PID = %s\n" $$ ; return 99 ; } ; ' 
+   'dummy ; printf "Return value = %s\n" $? ' 
+   'function doawk { awk -f '"$TESTDIR1"'/file.awk /etc/passwd ; } ; ' 
+   'doawk | head -6 ; echo "(...)" ; doawk | tail -6 ; ' 
+   '/bin/bash --version' 
+   'time (echo -n "DELAY 3 seconds..";sleep 1;echo -n "..";sleep 1;echo -n "..";sleep 1;echo ".. DONE")' 
+END test-file.txt ======================================
+   - test the script "bash newscript.sh aa bbb ccc dddd eeee"
+   - if your run "bash newscript.sh DELETE", it will delete:
+   - "$TESTDIR1" directory
+   -- "$TESTDIR1/file1.txt"
+   -- "$TESTDIR1/file2.txt"
+   -- "$TESTDIR1/file.awk"
+   -- "$TESTDIR1/program2.c"
+
