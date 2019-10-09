@@ -1,4 +1,4 @@
-# START Wed Oct  9 05:30:22 UTC 2019
+# REV01 Wed Oct  9 13:18:52 WIB 2019
 # START Wed Oct  9 12:30:22 WIB 2019
 
 CheckList06b.txt
@@ -61,7 +61,7 @@ CheckList06b.txt
    - is your time in UTC or WIB?
      -- Wed Oct  9 05:30:22 UTC 2019 or
      -- Wed Oct  9 12:30:22 WIB 2019
-   - is UTC, set your time to WIB
+   - if it is still UTC, set your time to WIB
    - execute "date > WIBproof.txt"
    - push
 
