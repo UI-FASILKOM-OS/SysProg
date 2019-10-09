@@ -1,3 +1,4 @@
+# REV02 Wed Oct  9 13:39:17 WIB 2019
 # REV01 Wed Oct  9 13:18:52 WIB 2019
 # START Wed Oct  9 12:30:22 WIB 2019
 
@@ -7,11 +8,11 @@ CheckList06b.txt
 
 1. update your virtualguest
 
-2. (push and) pull sp192
+2. (pull and) push sp192
 
 3. Create in your sp192/SandBox, folder "Week06b/"
 
-4. pull sp192
+4. (pull and) push sp192
 
 5. create a Makefile (template).
 
@@ -22,40 +23,40 @@ CheckList06b.txt
    - compile with make
    - try
    - clean
-   - push
+   - (pull and) push sp192
 
 8. - create simple_writeX.c (page 7/49)
    - update Makefile
    - compile with make
    - try
    - clean
-   - push
+   - (pull and) push sp192
 
 9. - create suatu-script.sh (page 32/49)
    - try
-   - push
+   - (pull and) push sp192
 
 10.- create exercise1.sh (page 35/49)
    - try
-   - push
+   - (pull and) push sp192
 
 11.- create exercise2.sh (page 38/49)
    - try
-   - push
+   - (pull and) push sp192
 
 12.- create exercise3.sh (page 40/49)
    - Err. (page 41/49)
      -- s/namaBerkas/fname/
    - try
-   - push
+   - (pull and) push sp192
 
 13.- create exercise4.sh (page 42/49)
    - try
-   - push
+   - (pull and) push sp192
 
 14.- create exercise5.sh (page 45/49)
    - try
-   - push
+   - (pull and) push sp192
 
 15. run command: "date"
    - is your time in UTC or WIB?
@@ -63,7 +64,7 @@ CheckList06b.txt
      -- Wed Oct  9 12:30:22 WIB 2019
    - if it is still UTC, set your time to WIB
    - execute "date > WIBproof.txt"
-   - push
+   - (pull and) push sp192
 
 16. fix your last time assignment:
    - ie. fix your script based on Demos/Week01:
@@ -116,4 +117,6 @@ END test-file.txt ======================================
    -- "$TESTDIR1/file2.txt"
    -- "$TESTDIR1/file.awk"
    -- "$TESTDIR1/program2.c"
+
+   - (pull and) push sp192
 
