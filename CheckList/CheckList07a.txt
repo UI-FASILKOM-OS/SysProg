@@ -1,3 +1,4 @@
+# REV04 Mon Oct 14 13:13:39 WIB 2019
 # REV03 Mon Oct 14 12:30:01 WIB 2019
 # REV02 Wed Oct  9 13:39:17 WIB 2019
 # REV01 Wed Oct  9 13:18:52 WIB 2019
@@ -21,7 +22,7 @@ exit 0
 === start ====
 nice -15 git pull origin master
 nice -15 git add -A .
-nice -15 git commit -m "`hostname` $BASE"
+nice -15 git commit -m "`hostname` $USER"
 nice -15 git push origin master
 === end ====
 
