@@ -1,0 +1,34 @@
+# REV03 Mon Oct 14 12:30:01 WIB 2019
+# REV02 Wed Oct  9 13:39:17 WIB 2019
+# REV01 Wed Oct  9 13:18:52 WIB 2019
+# START Wed Oct  9 12:30:22 WIB 2019
+
+CheckList07a.txt
+
+(All group members): 
+
+1. Create a script to update/upgrade your system. Eg.
+=== start ====
+apt-get update
+apt-get dist-upgrade -y
+apt-get autoremove --purge -y
+apt-get autoclean  -y
+apt-get clean  -y
+exit 0
+=== end ====
+
+2. Create a script to pull/push your git repo. Eg.
+=== start ====
+nice -15 git pull origin master
+nice -15 git add -A .
+nice -15 git commit -m "`hostname` $BASE"
+nice -15 git push origin master
+=== end ====
+
+3. Create a script to maintain your git repo.
+=== start ====
+git repack -f -a -d --depth=250 --window=250
+=== end ====
+
+4. FIX (continue)  Checklist06b.txt
+
