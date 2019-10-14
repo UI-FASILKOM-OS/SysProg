@@ -32,3 +32,5 @@ git repack -f -a -d --depth=250 --window=250
 
 4. FIX (continue)  Checklist06b.txt
 
+5. SkimRead the TLPI Book and Slides. Q?
+
