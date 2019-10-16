@@ -15,3 +15,7 @@ CheckList07b.txt
 4. Try scripts inside folder 07/
 
 5. PULL and PUSH
+
+6. Tray Exercises Slide #11 page 24/28 (Script 01 and 02)
+
+7. PULL and PUSH
