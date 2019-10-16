@@ -19,3 +19,11 @@ CheckList07b.txt
 6. Tray Exercises Slide #11 page 24/28 (Script 01 and 02)
 
 7. PULL and PUSH
+
+8. Think:
+
+a. What is "apt-cache depends gcc"?
+b. Compare "cat /proc/net/dev" and "ifconfig"
+c. Which one do you prefer (for text manipulations)?
+d. What is "/proc/sys/kernel/pid_max" ?
+
