@@ -6,7 +6,7 @@ exit_with_grace() {
    exit 0
 }
 
-trap "echo This is sent by 03-send-signal03.sh " USR2
+trap "echo This is sent by 01-send-signal.sh " USR2
 trap "exit_with_grace" USR1 TERM QUIT
 
 echo "This is PID $$"
