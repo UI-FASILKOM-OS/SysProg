@@ -8,4 +8,10 @@ CheckList07b.txt
    A*  - Mi* Thu, 24 Oct 2019 14:00++
    Mu* -  W* Fri, 25 Oct 2019 14:00++
 
-2. Try scripts inside folder 07/
+2. Create folder Week07b inside your SandBox.
+
+3. PULL and PUSH
+
+4. Try scripts inside folder 07/
+
+5. PULL and PUSH
