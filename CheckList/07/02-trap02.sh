@@ -2,7 +2,7 @@
 # START Wed Oct 16 11:16:58 WIB 2019
 
 exit_with_grace() {
-   echo "Exit by SIGNAL USR1"
+   echo "PID $$: Exit by SIGNAL USR1"
    exit 0
 }
 
