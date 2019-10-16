@@ -1,0 +1,11 @@
+# START Wed Oct 16 11:01:05 WIB 2019
+
+CheckList07b.txt
+
+(All group members): 
+
+1. Midterm (Oral @20-30 min.)
+   A*  - Mi* Thu, 24 Oct 2019 14:00++
+   Mu* -  W* Fri, 25 Oct 2019 14:00++
+
+2. Try scripts inside folder 07/
