@@ -2,7 +2,7 @@
 ---
 
 * *MIDTERM (ROOM 3207)*
-  * Th, 24 Oct 2019 - 14:00:  AMA, AND, ANG, AUF, DAN, DAV, MIC.
+  * Th, 24 Oct 2019 - 14:00:  AND, ANG, AUF, DAN, DAV, MIC, (more if time is available).
   * Fr, 25 Oct 2019 - 14:00:  MuIN, MuN, MuNI, MuRA, NAP, NCG, WADT.
 
 * [Download (ZIP)](https://github.com/UI-FASILKOM-OS/sysprog/archive/master.zip)
