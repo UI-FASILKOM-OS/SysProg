@@ -1,0 +1,16 @@
+# START Mon Oct 28 11:29:50 WIB 2019
+
+CheckList08b.txt
+
+1. Read URL:
+https://wiki.osdev.org/Boot_Sequence
+https://thekandyancode.wordpress.com/2013/09/21/how-the-raspberry-pi-boots-up/
+https://phoenixts.com/blog/uefi-vs-legacy-bios/
+https://www.howtogeek.com/193669/whats-the-difference-between-gpt-and-mbr-when-partitioning-a-drive/
+https://freedesktop.org/wiki/Software/systemd/
+https://www.ramkitech.com/2012/04/how-to-compile-kernel-step-by-step.html
+
+2. Still Useful:
+https://oldwiki.archive.openwrt.org/doc/techref/process.boot
+
+

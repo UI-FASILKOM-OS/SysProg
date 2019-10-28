@@ -6,9 +6,9 @@ CheckList08a.txt
 1. Read TLPI Ch. 34: PID, PPID, PGID, SID
 2. Read TLPI Ch. 37: Daemons
 3. Read URL: 
-   https://www.cyberciti.biz/faq/linux-command-line-run-in-background/
+https://www.cyberciti.biz/faq/linux-command-line-run-in-background/
 4. Read URL: 
-   https://www.tecmint.com/run-linux-command-process-in-background-detach-process/
+https://www.tecmint.com/run-linux-command-process-in-background-detach-process/
 5. Read Slides #12 (Daemons)
 -- Remember: dup?
 6. Try TLPI/daemon/
