@@ -1,9 +1,6 @@
 ---
 ---
 
-* *MIDTERM (ROOM 3207)*
-  * Fr, 25 Oct 2019 - 14:00:  MuN, MuNI, MuRA, NAP, NCG, WADT, AUF.
-
 * [Download (ZIP)](https://github.com/UI-FASILKOM-OS/sysprog/archive/master.zip)
 
 * [Checklists](https://github.com/UI-FASILKOM-OS/SysProg/tree/master/CheckList)
