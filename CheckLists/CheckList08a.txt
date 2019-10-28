@@ -1,20 +1,22 @@
+# REV00 Mon Oct 28 11:09:08 WIB 2019
 # START Mon Oct 28 08:05:25 WIB 2019
 
 CheckList08a.txt
 
 1. Read TLPI Ch. 34: PID, PPID, PGID, SID
 2. Read TLPI Ch. 37: Daemons
-3. Read Slides #12 (Daemons)
+3. Read URL: 
+   https://www.cyberciti.biz/faq/linux-command-line-run-in-background/
+4. Read URL: 
+   https://www.tecmint.com/run-linux-command-process-in-background-detach-process/
+5. Read Slides #12 (Daemons)
 -- Remember: dup?
-4. Try TLPI/daemon/
+6. Try TLPI/daemon/
 -- (make first)
 -- run: ./test_become_daemon
--- observe: ps -C test_become_daemon -o “pid ppid pgid sid tty command”
-
-
-
-
-
-
+-- observe: ps -C test_become_daemon -o "pid ppid pgid sid tty command"
+7. Daemon vs. BackGround
+8. Shell Job Control: bg vs fg, nohup, disown.
+9. Next: GSGS Kernel Compilation.
 
 
