@@ -18,11 +18,6 @@
 
 * [sysprog.vlsm.org](https://sysprog.vlsm.org/)
 
-* **KONTAK**:
-  * **TBA**
-
-* **TBA**
-
 <br>
 <h3>DISKLAIMER</h3>
 
