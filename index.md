@@ -3,7 +3,7 @@
 
 * [Download (ZIP)](https://github.com/UI-FASILKOM-OS/sysprog/archive/master.zip)
 
-* [Checklists](https://github.com/UI-FASILKOM-OS/SysProg/tree/master/CheckList)
+* [Checklists](https://github.com/UI-FASILKOM-OS/SysProg/tree/master/CheckLists)
 
 * **SP 2019-2 SandBox**: 
   * [https://github.com/UI-FASILKOM-OS/sp192/tree/master/SandBox](https://github.com/UI-FASILKOM-OS/sp192/tree/master/SandBox)
