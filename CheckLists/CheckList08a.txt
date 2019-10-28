@@ -1,0 +1,20 @@
+# START Mon Oct 28 08:05:25 WIB 2019
+
+CheckList08a.txt
+
+1. Read TLPI Ch. 34: PID, PPID, PGID, SID
+2. Read TLPI Ch. 37: Daemons
+3. Read Slides #12 (Daemons)
+-- Remember: dup?
+4. Try TLPI/daemon/
+-- (make first)
+-- run: ./test_become_daemon
+-- observe: ps -C test_become_daemon -o “pid ppid pgid sid tty command”
+
+
+
+
+
+
+
+
