@@ -1,3 +1,4 @@
+# REV01 Wed Oct 30 13:01:17 WIB 2019
 # START Mon Oct 28 11:29:50 WIB 2019
 
 CheckList08b.txt
@@ -13,4 +14,15 @@ https://www.ramkitech.com/2012/04/how-to-compile-kernel-step-by-step.html
 2. Still Useful:
 https://oldwiki.archive.openwrt.org/doc/techref/process.boot
 
+3. Read (SCELE):
+Requirements & Activities For Your Final Projects
+
+4. Download & Extract kernel (Slides 13: page 27):
+http://kambing.ui.ac.id/linux/v4.x/linux-4.15.1.tar.xz
+
+5. YouTube
+https://youtu.be/ca-I2zaIRaY
+
+6. ETC:
+https://drive.google.com/file/d/10v0Rd-pprp6sCzmoBbnoRLHVulfYMisX/view
 
