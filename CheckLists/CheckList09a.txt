@@ -1,0 +1,4 @@
+/proc/config.gz not found?
+
+# modeprobe configs
+
