@@ -1,7 +1,7 @@
-/proc/config.gz not found?
-
+# /proc/config.gz not found?
+#
 # modeprobe configs
-
+#
 =============== config ============
 #
 # Automatically generated file; DO NOT EDIT.
