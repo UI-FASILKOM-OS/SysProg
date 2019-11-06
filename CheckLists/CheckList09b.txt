@@ -1,5 +1,5 @@
 *ATTN* 
-REV02 Wed Nov  6 13:13:01 WIB 2019
+REV03 Wed Nov  6 13:27:58 WIB 2019
 START Wed Nov  6 08:12:41 WIB 2019
 =========================================================
 
@@ -37,6 +37,8 @@ libssl-dev
 libncurses5-dev
 make
 "
+
+apt-get install -y $DEBS
 
 (5)
 
