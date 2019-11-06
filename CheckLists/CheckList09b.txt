@@ -1,5 +1,5 @@
 *ATTN* 
-REV03 Wed Nov  6 13:27:58 WIB 2019
+REV04 Wed Nov  6 13:39:38 WIB 2019
 START Wed Nov  6 08:12:41 WIB 2019
 =========================================================
 
@@ -48,7 +48,12 @@ make
 
 (6) MultiCores?
 
-make -j4
+make -j8
+
+real	22m59.795s
+user	170m45.873s
+sys	5m21.622s
+
 
 (7) URLS
 https://hackaday.com/2016/02/03/code-craft-cross-compiling-for-the-raspberry-pi/
