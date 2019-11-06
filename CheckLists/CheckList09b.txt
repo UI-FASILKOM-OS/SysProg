@@ -1,5 +1,5 @@
 *ATTN* 
-REV01 Wed Nov  6 12:56:56 WIB 2019
+REV02 Wed Nov  6 13:13:01 WIB 2019
 START Wed Nov  6 08:12:41 WIB 2019
 =========================================================
 
@@ -44,7 +44,10 @@ make menuconfig
 
 make
 
+(6) MultiCores?
 
-(6) URLS
+make -j4
+
+(7) URLS
 https://hackaday.com/2016/02/03/code-craft-cross-compiling-for-the-raspberry-pi/
 
