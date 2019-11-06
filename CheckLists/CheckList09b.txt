@@ -1,0 +1,50 @@
+*ATTN* 
+REV01 Wed Nov  6 12:56:56 WIB 2019
+START Wed Nov  6 08:12:41 WIB 2019
+=========================================================
+
+(1) This following is just GSGS, ATM. 
+    Sometimes it works, sometimes it does not!
+
+(2) Where is your {Alamat folder raspberry-linux}?
+    E.g. /root/raspberry-linux
+
+(3) Add some environments in your .bashrc
+
+RPI_FOLDER="{Alamat folder raspberry-linux}"
+# eg. RPI_FOLDER="/extra/raspberry-linux"
+
+TMPF="$RPI_FOLDER/tools/arm-bcm2708/arm-bcm2708-linux-gnueabi/bin/"
+export PATH="$PATH:$TMPF"
+export CROSS_COMPILE="$RPI_FOLDER/tools/arm-bcm2708/arm-bcm2708-linux-gnueabi/bin/arm-bcm2708-linux-gnueabi-"
+export ARCH="arm"
+
+(4) Add (some of these following, do not know which :):
+
+export DEBS="
+bison
+build-essential
+device-tree-compiler
+flex
+gcc-arm-linux-gnueabi
+gdb-multiarch
+git
+g++-arm-linux-gnueabihf
+lib32ncurses5
+lib32z1
+libelf-dev
+libssl-dev
+libncurses5-dev
+make
+"
+
+(5)
+
+make menuconfig
+
+make
+
+
+(6) URLS
+https://hackaday.com/2016/02/03/code-craft-cross-compiling-for-the-raspberry-pi/
+
