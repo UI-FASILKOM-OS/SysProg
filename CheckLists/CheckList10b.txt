@@ -1,0 +1,14 @@
+REV00 Wed Nov 13 10:31:05 WIB 2019
+START Wed Nov 13 10:31:05 WIB 2019
+
+Progress Report I (Slide presentation)
+* Submit (PDF) to SCELE.
+  * This week plan
+  * This week realization:
+    * Kernel-Compilation
+    * Wireless Device
+    * Application has been installed on Raspberry
+  * Next week plan
+
+
+
