@@ -1,4 +1,4 @@
-REV01 Wed Nov 27 11:18:43 WIB 2019
+REV01 Wed Nov 27 19:18:43 WIB 2019
 START Wed Nov 27 07:55:13 WIB 2019
 =========================================================
 # URLS
@@ -44,7 +44,8 @@ apt-get install -y $DEBS
 
 #########################################################################
 RPI_FOLDER="/extra/raspberry-linux"
-TMPF="/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin"
+TMPF="$RPI_FOLDER/tools/arm-bcm2708"
+TMPF="$TMPF/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin"
 export PATH="$PATH:$TMPF"
 export CROSS_COMPILE="arm-linux-gnueabihf-"
 export INSTALL_MOD_PATH="mnt/ext4" 
@@ -77,7 +78,8 @@ sudo su -
 
 #########################################################################
 RPI_FOLDER="/extra/raspberry-linux"
-TMPF="/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin"
+TMPF="$RPI_FOLDER/tools/arm-bcm2708"
+TMPF="$TMPF/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin"
 export PATH="$PATH:$TMPF"
 export CROSS_COMPILE="arm-linux-gnueabihf-"
 export INSTALL_MOD_PATH="mnt/ext4"
@@ -88,16 +90,20 @@ export CORES="8"
 cd $RPI_FOLDER/linux
 
 ##########################################
-if grep -qs "/dev/sdb1" /proc/mounts; then
-   umount /dev/sdb1
+PART1=sdc1
+PART2=sdc2
+if grep -qs "/dev/$PART1" /proc/mounts; then
+   umount /dev/$PART1
 fi
-if grep -qs "/dev/sdb2" /proc/mounts; then
-   umount /dev/sdb2
+if grep -qs "/dev/$PART2" /proc/mounts; then
+   umount /dev/$PART2
 fi
+df
 ##########################################
-mount  /dev/sdb1 mnt/fat32
-mount  /dev/sdb2 mnt/ext4
-##########################
+mount  /dev/$PART1 mnt/fat32
+mount  /dev/$PART2 mnt/ext4
+df
+############################
 
 make modules_install
 [ -f mnt/fat32/$KERNEL.img ] && cp    mnt/fat32/$KERNEL.img mnt/fat32/$KERNEL-backup.img
@@ -111,23 +117,56 @@ cp arch/arm/boot/dts/overlays/README mnt/fat32/overlays/
 ################
 umount mnt/fat32
 umount mnt/ext4
+df
 ################
 
 # SUDO OFF  ##########################
+REV11 Wed Nov 27 09:37:56 WIB 2019
+REV10 Tue Nov 26 16:25:47 WIB 2019
+REV09 Fri 15 Nov 2019 12:17:37 AM WIB
+REV08 Thu Nov 14 02:24:30 WIB 2019
+REV07 Wed Nov 13 09:20:16 WIB 2019
+REV06 Mon Nov 11 10:11:14 WIB 2019
+REV05 Wed Nov  6 18:34:31 WIB 2019
+START Wed Nov  6 08:12:41 WIB 2019
+=========================================================
 
 # Raspbian Buster Full 2019-09-26 for Raspberry Pi 3B
 # Linux kernel version: 4.19.83 
 
+# i7-7700 CPU @ 3.60GHz (8 cores) CONFIG MODIF
+# Ubuntu 18.04, 16 GB 
+# Wed Nov 27 18:04:39 WIB 2019
+# real	7m13.638s
+# user	49m9.823s
+# sys	4m10.407s
+
 # i7-7700 CPU @ 3.60GHz (8 cores)
-# Ubuntu 18.04, 16 GB)
+# Ubuntu 18.04, 16 GB
 # Tue Nov 26 19:37:41 WIB 2019
 # real	7m9.961s  (/proc/config.gz)
 # user	49m33.343s
 # sys	3m53.043s
 # Wed Nov 27 11:00:10 WIB 2019
-# real	7m20.122s (default)
+# real	7m20.122s
 # user	49m52.126s
 # sys	3m51.983s
+# Wed Nov 27 17:14:36 WIB 2019
+# real	7m23.635s
+# user	49m32.343s
+# sys	3m49.719s
+# Wed Nov 27 09:37:21 WIB 2019
+# real	7m33.083s
+# user	50m19.870s
+# sys	3m58.397s
+# Tue Nov 26 17:43:27 WIB 2019
+# real	7m55.396s  (default)
+# user	50m17.426s
+# sys	3m58.862s
+# Wed Nov 13 10:04:24 WIB 2019
+# real	9m34.001s
+# user	70m0.575s
+# sys	2m26.937s
 
 # Thu Nov 14 04:22:46 WIB 2019
 # i3-8100 CPU @ 3.60GHz (4 cores)
