@@ -1,0 +1,93 @@
+REV02 Mon Dec  2 11:20:50 WIB 2019
+REV01 Wed Nov 27 19:18:43 WIB 2019
+START Wed Nov 27 07:55:13 WIB 2019
+=============================================================
+# CROSS COMPILE Raspbian at BADAK.cs.ui.ac.id (debian jessie)
+
+# URLS
+https://www.raspberrypi.org/documentation/linux/kernel/building.md
+https://www.raspberrypi.org/documentation/linux/kernel/configuring.md
+https://github.com/raspberrypi/linux
+
+# cd "TO YOUR WORKING DIRECTORY"
+# My working directory is "/home/demo/RPI"
+
+RPI_FOLDER="/home/demo/RPI"
+TMPF="$RPI_FOLDER/tools/arm-bcm2708"
+TMPF="$TMPF/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin"
+export PATH="$PATH:$TMPF"
+export CROSS_COMPILE="arm-linux-gnueabihf-"
+export INSTALL_MOD_PATH="mnt/ext4" 
+export ARCH="arm"
+export KERNEL="kernel7"
+export CORES="20"
+
+# COPY linux + tools from BADAK (LOCAL) #################################
+
+cd $RPI_FOLDER
+cp -r /opt/raspbian/linux/ .
+cp -r /opt/raspbian/tools/ .
+
+#########################################################################
+cd $RPI_FOLDER/linux
+[ -d mnt ]       || mkdir mnt
+[ -d mnt/fat32 ] || mkdir mnt/fat32
+[ -d mnt/ext4  ] || mkdir mnt/ext4
+
+make bcm2709_defconfig
+make menuconfig
+
+# KERNEL BUILD
+time nice -15 make -j${CORES} zImage modules dtbs 
+time make modules_install
+
+[ -f mnt/fat32/$KERNEL.img ] && cp    mnt/fat32/$KERNEL.img mnt/fat32/$KERNEL-backup.img
+[ -d mnt/fat32/overlays/ ]   || mkdir mnt/fat32/overlays/
+
+cp arch/arm/boot/zImage mnt/fat32/$KERNEL.img
+cp arch/arm/boot/dts/*.dtb mnt/fat32/
+cp arch/arm/boot/dts/overlays/*.dtb* mnt/fat32/overlays/
+cp arch/arm/boot/dts/overlays/README mnt/fat32/overlays/
+
+tar cfj ../mnt.tar.bz2 mnt/
+
+# COPY "mnt.tar.bz2" to your SD card #####################################
+
+##########################################################################
+real	3m59.840s
+user	64m20.924s
+sys	7m41.664s
+
+# ADMIN BADAK ############################################################
+
+# SUDO ON  ###############################################################
+sudo su -
+
+##########################################################################
+apt-get update;
+apt-get dist-upgrade -y;
+apt-get autoremove --purge -y;
+apt-get autoclean  -y;
+apt-get clean  -y;
+
+export DEBS="
+bc
+bison
+build-essential
+device-tree-compiler
+flex
+gawk
+gdb-multiarch
+git
+lib32z1
+libelf-dev
+libssl-dev
+libncurses5-dev
+make
+vim
+"
+
+apt-get install -y $DEBS
+
+# SUDO OFF  ##############################################################
+
