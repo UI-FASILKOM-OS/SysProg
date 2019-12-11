@@ -1,0 +1,10 @@
+# START Wed Dec 11 12:31:14 WIB 2019
+
+* Second Presentation Apointment: before 2020.
+** USB Flashdisk:
+*** Report Revision (in PDF!)
+*** config.gz
+
+
+Note:
+* Do not forget to return the RPI hardware after presentation.
