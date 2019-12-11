@@ -1,4 +1,5 @@
-﻿# REV01 Wed Dec 11 20:57:55 WIB 2019
+﻿# REV02 Wed 11 Dec 2019 09:11:50 PM WIB
+# REV01 Wed Dec 11 20:57:55 WIB 2019
 # START Wed Dec 11 12:31:14 WIB 2019
 
 * Second Presentation
@@ -25,6 +26,8 @@ URL: https://student.unsw.edu.au/how-do-i-cite-electronic-sources
   Can your report be used to replicate your work?
 * Use Courier-like font for source code.
 
+* Push your work into GitHub
+** https://github.com/UI-FASILKOM-OS/sp192
 
 Note:
 * Do not forget to return the RPI hardware after the presentation.
