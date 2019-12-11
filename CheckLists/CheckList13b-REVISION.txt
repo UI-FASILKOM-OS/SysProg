@@ -1,4 +1,4 @@
-﻿# REV02 Wed 11 Dec 2019 09:11:50 PM WIB
+﻿# REV03 Wed 11 Dec 2019 09:18:00 PM WIB
 # REV01 Wed Dec 11 20:57:55 WIB 2019
 # START Wed Dec 11 12:31:14 WIB 2019
 
@@ -28,6 +28,9 @@ URL: https://student.unsw.edu.au/how-do-i-cite-electronic-sources
 
 * Push your work into GitHub
 ** https://github.com/UI-FASILKOM-OS/sp192
+*** https://github.com/UI-FASILKOM-OS/sp192/tree/master/01-Finter
+*** https://github.com/UI-FASILKOM-OS/sp192/tree/master/02-KukFight
+*** https://github.com/UI-FASILKOM-OS/sp192/tree/master/03-Soiberry
 
 Note:
 * Do not forget to return the RPI hardware after the presentation.
