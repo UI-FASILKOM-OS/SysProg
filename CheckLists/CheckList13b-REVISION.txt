@@ -1,9 +1,13 @@
+# REV00 Wed Dec 11 13:18:41 WIB 2019
 # START Wed Dec 11 12:31:14 WIB 2019
 
 * Second Presentation Apointment: before 2020.
 ** USB Flashdisk:
 *** Report Revision (in PDF!)
 *** config.gz
+* How Do I Cite Online Sources?
+URL: https://student.unsw.edu.au/how-do-i-cite-electronic-sources
+
 
 
 Note:
