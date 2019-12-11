@@ -1,16 +1,30 @@
-# REV00 Wed Dec 11 13:18:41 WIB 2019
+﻿# REV00 Wed Dec 11 13:32:41 WIB 2019
 # START Wed Dec 11 12:31:14 WIB 2019
 
-* Second Presentation Apointment: before 2020.
-** USB Flashdisk:
+* Second Presentation
+** Make an appointment preferable before 2020.
+** Contact me by email.
+** No complete team is needed. However, you should understand the whole area (no lame excuse please).
+** Updates: regularly check this page.
+
+* Bring these following:
+** Your complete and working project.
+** A notebook to the Access Point.
+** An USB Flashdisk:
 *** Report Revision (in PDF!)
-*** config.gz
+*** Presentation Revision (in PDF!)
+*** Current config.gz
+
+* Check your kernel with "lsmod"
+** There should be no installed modules.
+
 * How Do I Cite Online Sources?
 URL: https://student.unsw.edu.au/how-do-i-cite-electronic-sources
 * URLs at the reference section (See WikiPedia)
 * Is your report detailed enough? 
   Can your report be used to replicate your work?
+* Use Courier-like font for source code.
 
 
 Note:
-* Do not forget to return the RPI hardware after presentation.
+* Do not forget to return the RPI hardware after the presentation.
