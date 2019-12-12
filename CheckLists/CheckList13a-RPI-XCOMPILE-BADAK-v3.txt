@@ -1,3 +1,5 @@
+REV06 Fri 13 Dec 2019 02:52:45 AM WIB
+REV05 Thu 12 Dec 2019 07:53:52 PM WIB
 REV04 Wed Dec 11 11:17:54 WIB 2019
 REV03 Mon Dec  9 13:11:00 WIB 2019
 REV02 Mon Dec  2 13:20:50 WIB 2019
@@ -5,71 +7,23 @@ REV01 Wed Nov 27 19:18:43 WIB 2019
 START Wed Nov 27 07:55:13 WIB 2019
 =============================================================
 # CROSS COMPILE Raspbian at BADAK.cs.ui.ac.id (debian jessie)
+real	3m59.840s
+user	64m20.924s
+sys	7m41.664s
+=============================================================
 
 # URLS
 https://www.raspberrypi.org/documentation/linux/kernel/building.md
 https://www.raspberrypi.org/documentation/linux/kernel/configuring.md
 https://github.com/raspberrypi/linux
+#####################################################################
 
-# RPI_FOLDER: the directory to cross compile the kernel.
-# Eg. "$HOME/RPI"
-RPI_FOLDER="$HOME/RPI"
-[ -d $RPI_FOLDER ] || mkdir $RPI_FOLDER
+# ADMIN BADAK #######################################################
 
-# TOOL_FOLDER: the tool folder at badak
-TOOL_FOLDER="/opt/raspbian/tools"
-TOOL_FOLDER="$TOOL_FOLDER/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin"
-export PATH="$PATH:$TOOL_FOLDER"
-export CROSS_COMPILE="arm-linux-gnueabihf-"
-export INSTALL_MOD_PATH="mnt/ext4" 
-export ARCH="arm"
-export KERNEL="kernel7"
-export CORES="20"
-
-# KERNEL_FOLDER: the kernel folder at badak
-KERNEL_FOLDER="/opt/raspbian/linux"
-# Copy the source code.
-cd $RPI_FOLDER
-cp -r $KERNEL_FOLDER/ .
-
-#########################################################################
-cd $RPI_FOLDER/linux
-[ -d mnt ]       || mkdir mnt
-[ -d mnt/fat32 ] || mkdir mnt/fat32
-[ -d mnt/ext4  ] || mkdir mnt/ext4
-
-make bcm2709_defconfig
-# OR: make oldconfig
-
-make menuconfig
-
-# KERNEL BUILD
-time nice -15 make -j${CORES} zImage modules dtbs 
-
-time make modules_install
-
-[ -f mnt/fat32/$KERNEL.img ] && cp    mnt/fat32/$KERNEL.img mnt/fat32/$KERNEL-backup.img
-[ -d mnt/fat32/overlays/ ]   || mkdir mnt/fat32/overlays/
-
-cp arch/arm/boot/zImage mnt/fat32/$KERNEL.img
-cp arch/arm/boot/dts/*.dtb mnt/fat32/
-cp arch/arm/boot/dts/overlays/*.dtb* mnt/fat32/overlays/
-cp arch/arm/boot/dts/overlays/README mnt/fat32/overlays/
-tar cfj ../mnt.tar.bz2 mnt/
-
-# COPY "mnt.tar.bz2" to your SD card #####################################
-
-##########################################################################
-real	3m59.840s
-user	64m20.924s
-sys	7m41.664s
-
-# ADMIN BADAK ############################################################
-
-# SUDO ON  ###############################################################
+# SUDO ON  ##########################################################
 sudo su -
 
-##########################################################################
+#####################################################################
 apt-get update;
 apt-get dist-upgrade -y;
 apt-get autoremove --purge -y;
@@ -89,11 +43,67 @@ lib32z1
 libelf-dev
 libssl-dev
 libncurses5-dev
+lz4
+lzma
+lzop
 make
 vim
+xz-utils
 "
 
 apt-get install -y $DEBS
 
-# SUDO OFF  ##############################################################
+# SUDO OFF ##########################################################
+#####################################################################
+
+# RPI_FOLDER: the directory to cross compile the kernel.
+# Eg. "$HOME/RPI"
+RPI_FOLDER="$HOME/RPI"
+[ -d $RPI_FOLDER ] || mkdir $RPI_FOLDER
+
+# TOOL_FOLDER: the tool folder at badak
+TOOL_FOLDER="/opt/raspbian/tools"
+TOOL_FOLDER="$TOOL_FOLDER/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin"
+export PATH="$PATH:$TOOL_FOLDER"
+export CROSS_COMPILE="arm-linux-gnueabihf-"
+export INSTALL_MOD_PATH="mnt/ext4" 
+export ARCH="arm"
+export KERNEL="kernel7"
+export CORES="20"
+
+#####################################################################
+# KERNEL_FOLDER: the kernel folder at badak
+KERNEL_FOLDER="/opt/raspbian/linux"
+# Copy the source code.
+cd $RPI_FOLDER
+cp -r $KERNEL_FOLDER/ .
+
+#########################################################################
+cd $RPI_FOLDER/linux
+
+make bcm2709_defconfig
+
+# OR: make oldconfig
+make menuconfig
+
+# KERNEL BUILD
+time nice -15 make -j${CORES} zImage modules dtbs 
+
+# rm -rf mnt/
+[ -d mnt ]       || mkdir mnt
+[ -d mnt/fat32 ] || mkdir mnt/fat32
+[ -d mnt/ext4  ] || mkdir mnt/ext4
+time make modules_install
+[ -f mnt/fat32/$KERNEL.img ] && cp    mnt/fat32/$KERNEL.img mnt/fat32/$KERNEL-backup.img
+[ -d mnt/fat32/overlays/ ]   || mkdir mnt/fat32/overlays/
+cp arch/arm/boot/zImage mnt/fat32/$KERNEL.img
+cp arch/arm/boot/dts/*.dtb mnt/fat32/
+cp arch/arm/boot/dts/overlays/*.dtb* mnt/fat32/overlays/
+cp arch/arm/boot/dts/overlays/README mnt/fat32/overlays/
+tar cfj ../mnt.tar.bz2 mnt/
+
+# COPY "mnt.tar.bz2" to your SD card #####################################
+# cp -r mnt/fat32/*            /boot/
+# cp -r mnt/ext4/lib/modules/  /lib/
+
 
