@@ -22,7 +22,7 @@
 
 * How Do I Cite Online Sources?
 URL: https://student.unsw.edu.au/how-do-i-cite-electronic-sources
-* URLs at the reference section (See WikiPedia)
+* URLs at the reference section (See Wikipedia)
 * Is your report detailed enough? 
   Can your report be used to replicate your work?
 * Use Courier-like font for source code.
