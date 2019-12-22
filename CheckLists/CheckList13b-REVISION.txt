@@ -29,7 +29,7 @@ URL: https://student.unsw.edu.au/how-do-i-cite-electronic-sources
 
 * Push your work into GitHub
 ** https://github.com/UI-FASILKOM-OS/sp192
-** See alsoh:
+** See also:
 *** https://github.com/UI-FASILKOM-OS/sp192/tree/master/01-Finter
 *** https://github.com/UI-FASILKOM-OS/sp192/tree/master/02-KukFight
 *** https://github.com/UI-FASILKOM-OS/sp192/tree/master/03-Soiberry
