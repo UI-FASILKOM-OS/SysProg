@@ -1,23 +1,24 @@
-﻿# REV03 Wed 11 Dec 2019 09:18:00 PM WIB
+﻿# REV04 Sun Dec 22 17:19:53 WIB 2019
+# REV03 Wed 11 Dec 2019 09:18:00 PM WIB
 # REV01 Wed Dec 11 20:57:55 WIB 2019
 # START Wed Dec 11 12:31:14 WIB 2019
 
 * Second Presentation
-** Make an appointment preferable before 2020.
+** Make an appointment preferable before 2020. Remember, you need to apply for a VISA ASAP.
 ** Contact me by email.
 ** No complete team is needed. However, you should understand the whole area (no lame excuse please).
-** Updates: regularly check this page.
+** Updates: CHECK THIS PAGE REGULARLY.
 
 * Bring these following:
 ** Your complete and working project.
-** A notebook to the Access Point.
+** A notebook to access your "AP", shell interface and your Web interface (if any).
 ** An USB Flashdisk:
 *** Report Revision (in PDF!)
 *** Presentation Revision (in PDF!)
 *** Current config.gz
 
 * Check your kernel with "lsmod"
-** There should be no installed modules.
+** There should be as little as possible installed modules.
 
 * How Do I Cite Online Sources?
 URL: https://student.unsw.edu.au/how-do-i-cite-electronic-sources
