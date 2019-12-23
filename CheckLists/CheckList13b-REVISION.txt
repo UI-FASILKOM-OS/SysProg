@@ -1,4 +1,4 @@
-﻿# REV08 Mon Dec 23 13:38:00 WIB 2019
+﻿# REV09 Mon Dec 23 14:30:11 WIB 2019
 # REV06 Sun Dec 22 17:36:36 WIB 2019
 # REV03 Wed 11 Dec 2019 09:18:00 PM WIB
 # REV01 Wed Dec 11 20:57:55 WIB 2019
@@ -34,17 +34,20 @@ URL: https://student.unsw.edu.au/how-do-i-cite-electronic-sources
 *** https://github.com/UI-FASILKOM-OS/sp192/tree/master/01-Finter
 *** https://github.com/UI-FASILKOM-OS/sp192/tree/master/02-KukFight
 *** https://github.com/UI-FASILKOM-OS/sp192/tree/master/03-Soiberry
-** You should add a readme.txt file and a proper header to your script.
+** You should:
+*** add a readme.txt file and a proper header to your script.
+*** add comments to your program/script, including a simple notice.
 *** Example:
 #
-# File: proc.py
+# File: foobar.py
 #
-# gdb helper commands and functions for Linux kernel debugging
-# Kernel proc information reader
-# Copyright (c) 2016 Linaro Ltd
+# Foobar is blah blah blah.
+# Copyright (c) 2019 Cicak Bin Kadal
 # Authors:
-#  Kieran Bingham <kieran.bingham@linaro.org>
-# This work is licensed under the terms of the GNU GPL version 2.
+#    Cicak Bin Kadal
+# This program is free script/software. This program is distributed in the 
+# hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
+# implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 #
 
 Note:
