@@ -1,4 +1,4 @@
-﻿# REV07 Mon Dec 23 13:36:22 WIB 2019
+﻿# REV08 Mon Dec 23 13:38:00 WIB 2019
 # REV06 Sun Dec 22 17:36:36 WIB 2019
 # REV03 Wed 11 Dec 2019 09:18:00 PM WIB
 # REV01 Wed Dec 11 20:57:55 WIB 2019
@@ -49,5 +49,4 @@ URL: https://student.unsw.edu.au/how-do-i-cite-electronic-sources
 
 Note:
 * Do not forget to return the RPI hardware AFTER the presentation.
-
 
