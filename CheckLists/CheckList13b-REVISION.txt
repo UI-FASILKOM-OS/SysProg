@@ -31,6 +31,18 @@ URL: https://student.unsw.edu.au/how-do-i-cite-electronic-sources
 *** https://github.com/UI-FASILKOM-OS/sp192/tree/master/01-Finter
 *** https://github.com/UI-FASILKOM-OS/sp192/tree/master/02-KukFight
 *** https://github.com/UI-FASILKOM-OS/sp192/tree/master/03-Soiberry
+** You should add a readme.txt file and a proper header to your script.
+*** Example:
+#
+# File: proc.py
+#
+# gdb helper commands and functions for Linux kernel debugging
+# Kernel proc information reader
+# Copyright (c) 2016 Linaro Ltd
+# Authors:
+#  Kieran Bingham <kieran.bingham@linaro.org>
+# This work is licensed under the terms of the GNU GPL version 2.
+#
 
 Note:
 * Do not forget to return the RPI hardware after the presentation.
