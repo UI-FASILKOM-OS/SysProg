@@ -8,7 +8,7 @@
 * **SP 2019-2 SandBox**: 
   * [https://github.com/UI-FASILKOM-OS/sp192/tree/master/SandBox](https://github.com/UI-FASILKOM-OS/sp192/tree/master/SandBox)
 
-* [SCELE](https://scele.cs.ui.ac.id/course/view.php?id=725)
+* [SCELE](https://scele.cs.ui.ac.id/course/view.php?id=2975)
 
 * **[The Linux Programming Interface (TLPI)](http://man7.org/tlpi/code/online/)**
   * **TLPI Download Page** [http://man7.org/tlpi/code/download/](http://man7.org/tlpi/code/download/)
